@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE window SYSTEM "chrome://slimerjs/locale/slimerjs.dtd">
+<!--
+This Source Code Form is subject to the terms of the Mozilla Public
+License, v. 2.0. If a copy of the MPL was not distributed with this
+file, You can obtain one at http://mozilla.org/MPL/2.0/.
+-->
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://global/skin/applications" type="text/css"?>
+<?xml-stylesheet href="slimerjs.css" type="text/css"?>
+<window xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    id="slimerjswin" hidechrome="false" title="SlimerJS"
+    windowtype="slimerjs"
+    width="150" height="100"
+    onload="startup()"
+    orient="vertical"
+    >
+    <script type="application/javascript" src="slimerjs.js" />
+
+    <stack id="hauntedwall" flex="1">
+        <html:div>
+            <html:h2><html:span>Slimer</html:span>JS</html:h2>
+            <html:div id="version">&slimerjs.version; <html:span id="versionnumber"></html:span></html:div>
+            <!--<html:h2>&slimerjs.slogan;</html:h2>-->
+        </html:div>
+        <hbox flex="1" pack="center" align="center">
+            <image src="slimerjs.png" />
+        </hbox>
+        <iframe id="runtime" src="about:blank" type="content" collapsed="true"/>
+    </stack>
+    <keyset>
+        <key id="key_quit" key="w" oncommand="quit()" modifiers="control"/>
+        <key id="key_quit2" key="c" oncommand="quit()" modifiers="control"/>
+    </keyset>
+</window>

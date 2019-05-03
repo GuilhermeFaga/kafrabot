@@ -1,0 +1,6 @@
+{
+  "token": "",
+  "token_beta" : "",
+  "prefix": "!",
+  "commands": ["db", "et"]
+}

@@ -1,0 +1,15 @@
+The files of this project are licensed under the MPL 2.0 (http://mozilla.org/MPL/2.0/),
+with the exception of the components listed below, which are made
+available by their authors under the licenses listed alongside.
+
+* for exceptions in the source code, see src/LICENSE
+
+* For tests, the Jasmine library is used:
+
+    * test/jasmine/jasmine.js
+       is released under the MIT Licence. see test/jasmine/MIT.LICENCE
+       http://pivotal.github.com/jasmine/
+
+    * test/jasmine/jasmine.async.min.js
+       is released under the MIT Licence.
+       https://github.com/derickbailey/jasmine.async
